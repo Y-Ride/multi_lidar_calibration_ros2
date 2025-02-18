@@ -7,7 +7,7 @@
 
 ## parameters
 
-### multi_llidar_calibration_ndt
+### multi_lidar_calibration_ndt
 
 |*parameter*|*description*| *default value*|
 |--|--|--|

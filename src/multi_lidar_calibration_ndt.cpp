@@ -7,8 +7,8 @@ namespace multi_lidar_calibration_ndt
 
 MultiLidarCalibrationNdt::MultiLidarCalibrationNdt()
 : Node("multi_lidar_calibration_ndt"),
-  pointcloud_source_sub_(this, "~/input/source_pointcloud", rmw_qos_profile_sensor_data),
-  pointcloud_target_sub_(this, "~/input/target_pointcloud", rmw_qos_profile_sensor_data),
+  pointcloud_source_sub_(this, "input/source_pointcloud", rmw_qos_profile_sensor_data),
+  pointcloud_target_sub_(this, "input/target_pointcloud", rmw_qos_profile_sensor_data),
   sync_(SyncPolicy(10), pointcloud_source_sub_, pointcloud_target_sub_)
 {
   sync_.setMaxIntervalDuration(rclcpp::Duration(1.0, 0));
@@ -45,6 +45,10 @@ MultiLidarCalibrationNdt::MultiLidarCalibrationNdt()
   sync_.registerCallback(std::bind(
     &MultiLidarCalibrationNdt::callbackLidars, this, std::placeholders::_1,
     std::placeholders::_2));
+
+  // Print out the topic names
+  // std::cout << "Subscribed to: " << pointcloud_source_sub_.getTopic() << std::endl;
+  // std::cout << "Subscribed to: " << pointcloud_target_sub_.getTopic() << std::endl;
 }
 
 MultiLidarCalibrationNdt::~MultiLidarCalibrationNdt()
@@ -54,6 +58,7 @@ MultiLidarCalibrationNdt::~MultiLidarCalibrationNdt()
 void MultiLidarCalibrationNdt::callbackLidars(const sensor_msgs::msg::PointCloud2::ConstSharedPtr & point_1,
     const sensor_msgs::msg::PointCloud2::ConstSharedPtr & point_2)
 {
+  // std::cout << "Inside of callback. Got point clouds" << std::endl;
   rclcpp::Time start_time = this->now();
   pcl::PointCloud<pcl::PointXYZI>::Ptr source_pointcloud(new pcl::PointCloud<pcl::PointXYZI>);
   pcl::PointCloud<pcl::PointXYZI>::Ptr target_pointcloud (new pcl::PointCloud<pcl::PointXYZI>);
@@ -67,11 +72,58 @@ void MultiLidarCalibrationNdt::callbackLidars(const sensor_msgs::msg::PointCloud
   pcl::fromROSMsg(*point_1, *source_pointcloud);
   pcl::fromROSMsg(*point_2, *target_pointcloud);
 
-  approximate_voxel_filter_.setInputCloud(target_pointcloud);
+  // for (const auto& point : source_pointcloud->points) {
+  //   if (!pcl::isFinite(point)) {
+  //       std::cerr << "NaN or Inf detected in source point cloud!" << std::endl;
+  //   }
+  // }
+
+  // for (const auto& point : target_pointcloud->points) {
+  //     if (!pcl::isFinite(point)) {
+  //         std::cerr << "NaN or Inf detected in target point cloud!" << std::endl;
+  //     }
+  // }
+
+  // // Print first 20 points from source point cloud
+  // std::cout << "Source PointCloud (first 20 points):" << std::endl;
+  // for (size_t i = 0; i < std::min<size_t>(20, source_pointcloud->points.size()); ++i) {
+  //     std::cout << "Point " << i << ": ("
+  //               << source_pointcloud->points[i].x << ", "
+  //               << source_pointcloud->points[i].y << ", "
+  //               << source_pointcloud->points[i].z << ")" << std::endl;
+  // }
+
+  // // Print first 20 points from target point cloud
+  // std::cout << "Target PointCloud (first 20 points):" << std::endl;
+  // for (size_t i = 0; i < std::min<size_t>(20, target_pointcloud->points.size()); ++i) {
+  //     std::cout << "Point " << i << ": ("
+  //               << target_pointcloud->points[i].x << ", "
+  //               << target_pointcloud->points[i].y << ", "
+  //               << target_pointcloud->points[i].z << ")" << std::endl;
+  // }
+
+  // Print the size of the source and target point clouds
+  // std::cout << "Source cloud size: " << source_pointcloud->size() << std::endl;
+  // std::cout << "Target cloud size: " << target_pointcloud->size() << std::endl;
+
+  // Remove NaNs from source point cloud
+  pcl::PointCloud<pcl::PointXYZI>::Ptr filtered_source(new pcl::PointCloud<pcl::PointXYZI>());
+  std::vector<int> indices;
+  pcl::removeNaNFromPointCloud(*source_pointcloud, *filtered_source, indices);
+
+  // Remove NaNs from target point cloud
+  pcl::PointCloud<pcl::PointXYZI>::Ptr filtered_target(new pcl::PointCloud<pcl::PointXYZI>());
+  pcl::removeNaNFromPointCloud(*target_pointcloud, *filtered_target, indices);
+
+  // std::cout << "Filtered source cloud size: " << filtered_source->size() << std::endl;
+  // std::cout << "Filtered target cloud size: " << filtered_target->size() << std::endl;
+
+  // return;
+  approximate_voxel_filter_.setInputCloud(filtered_target);
   approximate_voxel_filter_.filter(*filtered_target_pointcloud);
 
   ndt_.setInputSource(filtered_target_pointcloud);
-  ndt_.setInputTarget(source_pointcloud);
+  ndt_.setInputTarget(filtered_source);
 
   ndt_.align(*final_pointcloud, current_transform_mtraix_);
 
@@ -104,7 +156,7 @@ void MultiLidarCalibrationNdt::callbackLidars(const sensor_msgs::msg::PointCloud
     tf_broadcaster_->sendTransform(t);
   }
   rclcpp::Time end_time = this->now();
-  std::cout << "process time: " << (end_time - start_time).seconds() * 1000.0 << "ms.\n";
+  std::cout << "process time: " << (end_time - start_time).seconds() * 1000.0 << "ms.\n\n";
 }
 
 } // namespace multi_lidar_calibration_ndt

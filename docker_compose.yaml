@@ -1,0 +1,17 @@
+services:
+  multi_lidar_calibration_ros2:
+    build: 
+      context: ${HOME}/multi_lidar_calibration_ros2
+      dockerfile: dockerfile
+    image: multi_lidar_calibration_ros2
+    container_name: multi_lidar_calibration_ros2
+    volumes:
+      - ${HOME}/docker_yride/ros2_ws/bags:/bags:rw
+      - ${HOME}/multi_lidar_calibration_ros2:/ros2_ws/src/multi_lidar_calibration:rw
+    environment:
+      DISPLAY: ${DISPLAY}
+      ROS_DOMAIN_ID: 1
+    stdin_open: true
+    tty: true
+    network_mode: host
+
