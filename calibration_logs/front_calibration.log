@@ -1,0 +1,440 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2025-02-21-19-04-33-555153-yride2-12120
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [multi_lidar_calibration_ndt_node-1]: process started with pid [12127]
+[multi_lidar_calibration_ndt_node-1] initial guess: 
+[multi_lidar_calibration_ndt_node-1]  0.560233 -0.560233 -0.610145   -1.7526
+[multi_lidar_calibration_ndt_node-1]  0.707107  0.707107         0         0
+[multi_lidar_calibration_ndt_node-1]  0.431438 -0.431438   0.79229   -0.2032
+[multi_lidar_calibration_ndt_node-1]         0         0         0         1
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.73399
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]    0.552343   -0.566341   -0.611699    -1.71532
+[multi_lidar_calibration_ndt_node-1]    0.710884    0.703249 -0.00919838  -0.0448803
+[multi_lidar_calibration_ndt_node-1]    0.435386   -0.429766    0.791037   -0.206302
+[multi_lidar_calibration_ndt_node-1]           0           0           0           1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.71532 -0.0448803  -0.206302   0.91025 -0.450467  -0.49768 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4148.45ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.68134
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.543798  -0.564555  -0.620936   -1.74904
+[multi_lidar_calibration_ndt_node-1]   0.713323   0.700726 -0.0123931 -0.0235239
+[multi_lidar_calibration_ndt_node-1]   0.442102  -0.436188   0.783764  -0.195331
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74904 -0.0235239  -0.195331  0.919441 -0.457941 -0.507843 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 5675.42ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.7492
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.545989  -0.566134  -0.617566   -1.75275
+[multi_lidar_calibration_ndt_node-1]   0.712595   0.701454 -0.0130321 -0.0212267
+[multi_lidar_calibration_ndt_node-1]   0.440572  -0.432959   0.786411  -0.213378
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.75275 -0.0212267  -0.213378  0.917009 -0.456236 -0.503266 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4281.17ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.30097
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.547924  -0.568049  -0.614084   -1.75324
+[multi_lidar_calibration_ndt_node-1]   0.712882   0.701172  -0.012531 -0.0211195
+[multi_lidar_calibration_ndt_node-1]   0.437697  -0.430904   0.789141  -0.233358
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.75324 -0.0211195  -0.233358  0.915495 -0.453035 -0.499799 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4261.56ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 3.80276
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.545582  -0.566773   -0.61734   -1.74067
+[multi_lidar_calibration_ndt_node-1]   0.713381    0.70066 -0.0128087 -0.0252452
+[multi_lidar_calibration_ndt_node-1]   0.439805   -0.43341   0.786592  -0.225663
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74067 -0.0252452  -0.225663    0.9179 -0.455381 -0.503608 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4286.91ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.71031
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.545622  -0.567001  -0.617096   -1.73906
+[multi_lidar_calibration_ndt_node-1]   0.713717   0.700324 -0.0124206 -0.0273342
+[multi_lidar_calibration_ndt_node-1]    0.43921  -0.433654    0.78679  -0.232928
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73906 -0.0273342  -0.232928  0.918092 -0.454719  -0.50374 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4301.5ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.62251
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.546348  -0.567762  -0.615752   -1.73712
+[multi_lidar_calibration_ndt_node-1]   0.714104    0.69994 -0.0117748 -0.0294357
+[multi_lidar_calibration_ndt_node-1]   0.437675  -0.433278   0.787852  -0.248141
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73712 -0.0294357  -0.248141  0.917713 -0.453011 -0.502803 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4294.18ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.69303
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.545468   -0.56692  -0.617306   -1.73625
+[multi_lidar_calibration_ndt_node-1]   0.713453   0.700583 -0.0129738 -0.0281887
+[multi_lidar_calibration_ndt_node-1]    0.43983  -0.433342   0.786616  -0.230704
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73625 -0.0281887  -0.230704   0.91805 -0.455409 -0.503529 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4311.38ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.72168
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.545903  -0.567484  -0.616402   -1.73565
+[multi_lidar_calibration_ndt_node-1]   0.713942   0.700097 -0.0122499 -0.0301609
+[multi_lidar_calibration_ndt_node-1]   0.438493  -0.433388   0.787337  -0.240855
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73565 -0.0301609  -0.240855  0.917996 -0.453921 -0.503187 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4266ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.6628
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.545279  -0.566905  -0.617487   -1.73663
+[multi_lidar_calibration_ndt_node-1]   0.713484   0.700549 -0.0131124 -0.0284914
+[multi_lidar_calibration_ndt_node-1]   0.440013  -0.433417   0.786472  -0.225347
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73663 -0.0284914  -0.225347  0.918238 -0.455613 -0.503679 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4311.35ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.68217
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.548113   -0.56961  -0.612468   -1.73425
+[multi_lidar_calibration_ndt_node-1]    0.71375   0.700289 -0.0125327 -0.0308773
+[multi_lidar_calibration_ndt_node-1]   0.436043   -0.43028   0.790396  -0.248726
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73425 -0.0308773  -0.248726  0.915916 -0.451197 -0.498522 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4291.85ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.70423
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.547962  -0.569412  -0.612787   -1.73375
+[multi_lidar_calibration_ndt_node-1]   0.713306   0.700727 -0.0132784 -0.0296717
+[multi_lidar_calibration_ndt_node-1]   0.436957  -0.429829   0.790137  -0.242203
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73375 -0.0296717  -0.242203  0.915748 -0.452213 -0.498219 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4362.33ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.77532
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.548961  -0.570448  -0.610926    -1.7353
+[multi_lidar_calibration_ndt_node-1]   0.713898   0.700143 -0.0122653 -0.0316299
+[multi_lidar_calibration_ndt_node-1]   0.434732  -0.429405   0.791593  -0.252825
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher    -1.7353 -0.0316299  -0.252825  0.915268  -0.44974 -0.497034 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4331.37ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.68868
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.549263  -0.570707  -0.610413   -1.73636
+[multi_lidar_calibration_ndt_node-1]   0.712802   0.701221 -0.0142139 -0.0289679
+[multi_lidar_calibration_ndt_node-1]   0.436147  -0.427296   0.791956  -0.238104
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73636 -0.0289679  -0.238104  0.914261 -0.451312 -0.494782 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4325.17ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 3.12204
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.548799  -0.570194  -0.611309   -1.73559
+[multi_lidar_calibration_ndt_node-1]   0.712496   0.701522 -0.0147002 -0.0280375
+[multi_lidar_calibration_ndt_node-1]   0.437228  -0.427488   0.791256   -0.23259
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73559 -0.0280375   -0.23259  0.914462 -0.452515 -0.495339 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4349.29ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.68891
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.548988   -0.57033  -0.611013   -1.73561
+[multi_lidar_calibration_ndt_node-1]   0.711697   0.702302 -0.0160895 -0.0257329
+[multi_lidar_calibration_ndt_node-1]   0.438292  -0.426023   0.791457  -0.223099
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73561 -0.0257329  -0.223099  0.913753 -0.453697 -0.493798 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 4291.55ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.67691
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.551131  -0.572604  -0.606942   -1.74058
+[multi_lidar_calibration_ndt_node-1]   0.711784   0.702212 -0.0161508 -0.0320779
+[multi_lidar_calibration_ndt_node-1]    0.43545  -0.423111   0.794582  -0.231823
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74058 -0.0320779  -0.231823  0.911927 -0.450539 -0.489305 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2796.69ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.65706
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550063  -0.571827  -0.608642   -1.73831
+[multi_lidar_calibration_ndt_node-1]   0.711907   0.702086 -0.0162303  -0.030124
+[multi_lidar_calibration_ndt_node-1]     0.4366  -0.424369   0.793279  -0.225993
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher  -1.73831 -0.030124 -0.225993  0.912949 -0.451816 -0.491219 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2792.15ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.72101
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550197  -0.572146  -0.608221   -1.73917
+[multi_lidar_calibration_ndt_node-1]   0.712018   0.701973 -0.0162457 -0.0309026
+[multi_lidar_calibration_ndt_node-1]    0.43625  -0.424126   0.793601   -0.22901
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73917 -0.0309026   -0.22901  0.912907 -0.451427 -0.490813 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2775.72ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.64621
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550052  -0.571986  -0.608502   -1.73905
+[multi_lidar_calibration_ndt_node-1]   0.712054   0.701938 -0.0161572 -0.0305214
+[multi_lidar_calibration_ndt_node-1]   0.436372  -0.424399   0.793388  -0.227924
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73905 -0.0305214  -0.227924  0.913059 -0.451563 -0.491192 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2873.14ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.61242
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550265  -0.571934  -0.608359   -1.73849
+[multi_lidar_calibration_ndt_node-1]   0.711859   0.702135 -0.0162129 -0.0311704
+[multi_lidar_calibration_ndt_node-1]   0.436422  -0.424144   0.793497  -0.227268
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73849 -0.0311704  -0.227268  0.912739 -0.451619 -0.490885 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2936.5ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.59022
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550301  -0.571914  -0.608344   -1.73767
+[multi_lidar_calibration_ndt_node-1]   0.711921   0.702076 -0.0160377  -0.031536
+[multi_lidar_calibration_ndt_node-1]   0.436276  -0.424268   0.793511  -0.228062
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher  -1.73767 -0.031536 -0.228062  0.912749 -0.451456 -0.490998 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2890.52ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.64348
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550366   -0.57235  -0.607876    -1.7419
+[multi_lidar_calibration_ndt_node-1]   0.711964   0.702025 -0.0163895 -0.0293935
+[multi_lidar_calibration_ndt_node-1]   0.436124  -0.423765   0.793863  -0.228729
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher    -1.7419 -0.0293935  -0.228729  0.912721 -0.451287 -0.490322 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2825.85ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.61293
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550348   -0.57197  -0.608249   -1.73826
+[multi_lidar_calibration_ndt_node-1]   0.711875   0.702121 -0.0161345 -0.0318114
+[multi_lidar_calibration_ndt_node-1]   0.436293  -0.424118   0.793582  -0.228773
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73826 -0.0318114  -0.228773  0.912677 -0.451475 -0.490815 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2850.95ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.59319
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]    0.55041  -0.572272   -0.60791   -1.74158
+[multi_lidar_calibration_ndt_node-1]    0.71195   0.702042 -0.0162761 -0.0304575
+[multi_lidar_calibration_ndt_node-1]   0.436092  -0.423843   0.793839  -0.229278
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74158 -0.0304575  -0.229278  0.912673 -0.451252  -0.49041 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2831.87ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.64266
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550151  -0.572254   -0.60816   -1.74025
+[multi_lidar_calibration_ndt_node-1]   0.712084   0.701905  -0.016303 -0.0306521
+[multi_lidar_calibration_ndt_node-1]   0.436201  -0.424092   0.793647  -0.228564
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74025 -0.0306521  -0.228564  0.912992 -0.451372 -0.490755 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2900.73ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.64986
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550178   -0.57207   -0.60831    -1.7406
+[multi_lidar_calibration_ndt_node-1]   0.712008   0.701984  -0.016197 -0.0311863
+[multi_lidar_calibration_ndt_node-1]   0.436289   -0.42421   0.793535  -0.227971
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher    -1.7406 -0.0311863  -0.227971  0.912917 -0.451471  -0.49093 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2845.01ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.30937
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550385  -0.572026  -0.608163   -1.73911
+[multi_lidar_calibration_ndt_node-1]   0.711902   0.702094 -0.0161076 -0.0305838
+[multi_lidar_calibration_ndt_node-1]   0.436201  -0.424087   0.793649  -0.227499
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73911 -0.0305838  -0.227499  0.912663 -0.451373  -0.49075 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2849.59ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.70711
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550144  -0.571924  -0.608477   -1.74008
+[multi_lidar_calibration_ndt_node-1]   0.711858   0.702134 -0.0163407 -0.0309103
+[multi_lidar_calibration_ndt_node-1]   0.436578  -0.424159   0.793403  -0.227136
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74008 -0.0309103  -0.227136  0.912844 -0.451791 -0.490949 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2889.49ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.58489
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550645  -0.572344  -0.607629   -1.74115
+[multi_lidar_calibration_ndt_node-1]   0.711909   0.702086  -0.016171 -0.0304435
+[multi_lidar_calibration_ndt_node-1]   0.435863  -0.423672   0.794057  -0.229764
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74115 -0.0304435  -0.229764  0.912439 -0.450996 -0.490129 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2877.2ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.63774
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550145  -0.572252  -0.608168   -1.73992
+[multi_lidar_calibration_ndt_node-1]      0.712   0.701987 -0.0164594 -0.0312645
+[multi_lidar_calibration_ndt_node-1]   0.436345  -0.423961   0.793638  -0.228054
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73992 -0.0312645  -0.228054   0.91294 -0.451532 -0.490631 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2835.86ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.68415
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550125  -0.571782  -0.608627   -1.73868
+[multi_lidar_calibration_ndt_node-1]    0.71191   0.702086 -0.0161028 -0.0308174
+[multi_lidar_calibration_ndt_node-1]   0.436516  -0.424429   0.793293  -0.227398
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73868 -0.0308174  -0.227398  0.912896 -0.451723 -0.491271 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2848.75ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.56581
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550276  -0.572467  -0.607846   -1.74241
+[multi_lidar_calibration_ndt_node-1]    0.71207   0.701917  -0.016434 -0.0307077
+[multi_lidar_calibration_ndt_node-1]   0.436065  -0.423785   0.793885  -0.229005
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74241 -0.0307077  -0.229005  0.912872 -0.451222  -0.49033 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2840.62ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.4082
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550166  -0.572062  -0.608327   -1.74042
+[multi_lidar_calibration_ndt_node-1]    0.71201   0.701982 -0.0161977 -0.0297174
+[multi_lidar_calibration_ndt_node-1]   0.436301  -0.424224   0.793521  -0.228146
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74042 -0.0297174  -0.228146  0.912929 -0.451484 -0.490951 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2862.39ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.66656
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550338  -0.572065  -0.608169   -1.73788
+[multi_lidar_calibration_ndt_node-1]   0.711894     0.7021 -0.0162205 -0.0317718
+[multi_lidar_calibration_ndt_node-1]   0.436275  -0.424025   0.793642  -0.228628
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.73788 -0.0317718  -0.228628  0.912698 -0.451454 -0.490692 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2879.28ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.63829
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550435   -0.57232  -0.607842    -1.7403
+[multi_lidar_calibration_ndt_node-1]   0.712001   0.701991  -0.016209 -0.0306225
+[multi_lidar_calibration_ndt_node-1]   0.435976  -0.423862   0.793893  -0.228853
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher    -1.7403 -0.0306225  -0.228853  0.912686 -0.451123 -0.490401 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2871.25ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.61444
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550489  -0.572067   -0.60803    -1.7409
+[multi_lidar_calibration_ndt_node-1]   0.711845   0.702151 -0.0161421 -0.0315072
+[multi_lidar_calibration_ndt_node-1]   0.436163  -0.423937    0.79375  -0.229629
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher    -1.7409 -0.0315072  -0.229629  0.912532 -0.451331 -0.490549 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2831.04ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.68486
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550354  -0.572293  -0.607941   -1.74171
+[multi_lidar_calibration_ndt_node-1]   0.712057   0.701936  -0.016169 -0.0296438
+[multi_lidar_calibration_ndt_node-1]   0.435989  -0.423989   0.793818  -0.229566
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74171 -0.0296438  -0.229566  0.912795 -0.451137 -0.490565 os_lidar_top os_lidar_front
+[multi_lidar_calibration_ndt_node-1] process time: 2870.49ms.
+[multi_lidar_calibration_ndt_node-1] 
+[multi_lidar_calibration_ndt_node-1] NDT converged.
+[multi_lidar_calibration_ndt_node-1] The score is 1.65053
+[multi_lidar_calibration_ndt_node-1] Transformation matrix:
+[multi_lidar_calibration_ndt_node-1]   0.550484  -0.572266  -0.607848   -1.74023
+[multi_lidar_calibration_ndt_node-1]   0.711988   0.702006 -0.0161156 -0.0308126
+[multi_lidar_calibration_ndt_node-1]   0.435936   -0.42391    0.79389  -0.229185
+[multi_lidar_calibration_ndt_node-1]          0          0          0          1
+[multi_lidar_calibration_ndt_node-1] This transformation can be replicated using:
+[multi_lidar_calibration_ndt_node-1] ros2 run tf2_ros static_transform_publisher   -1.74023 -0.0308126  -0.229185  0.912634 -0.451078 -0.490449 os_lidar_top os_lidar_front
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[multi_lidar_calibration_ndt_node-1] [INFO] [1740164876.965964312] [rclcpp]: signal_handler(signum=2)
+[multi_lidar_calibration_ndt_node-1] process time: 2849.6ms.
+[multi_lidar_calibration_ndt_node-1] 
+[INFO] [multi_lidar_calibration_ndt_node-1]: process has finished cleanly [pid 12127]

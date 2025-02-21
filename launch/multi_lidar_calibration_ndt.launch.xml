@@ -1,13 +1,21 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="initial_pose" default="[1.7526, 0.0, -0.2032, 0.0, 0.5148721, 2.35619]" /> <!-- Initial Pose of the child pointcloud (xyz meters/rpy radians) -->
+  <!-- Initial Pose of the child pointcloud (xyz meters/rpy radians) -->
+  <!-- Left -->
+  <arg name="initial_pose" default="[-0.0889, -0.73025, -0.2413, 0.853466, 0.0, 2.35619]" />
+  <!-- Right -->
+  <!-- <arg name="initial_pose" default="[-0.0889, 0.73025, -0.2413, -0.8307767, 0.0, -2.35619]" /> -->
+  <!-- Front -->
+  <!-- <arg name="initial_pose" default="[-1.7526, 0.0, -0.2032, 0.0, -0.6562438, 0.785398]" /> -->
+  <!-- Back -->
+  <!-- <arg name="initial_pose" default="[1.7526, 0.0, -0.2032, 0.0, 0.5148721, 2.35619]" />  -->
   <arg name="leaf_size" default="0.2" />
   <arg name="max_iteration" default="10" />
   <arg name="transform_epsilon" default="0.001" />
   <arg name="step_size" default="0.05" />
   <arg name="resolution" default="0.5" />
   <arg name="input/source_pointcloud" default="/ouster_top/points" /> <!-- Reference Pointcloud / Parent -->
-  <arg name="input/target_pointcloud" default="/ouster_back/points" /> <!-- Needs to be transformed / Child -->
+  <arg name="input/target_pointcloud" default="/ouster_left/points" /> <!-- Needs to be transformed / Child -->
 
   <node pkg="multi_lidar_calibration" name="multi_lidar_calibration_ndt_node" exec="multi_lidar_calibration_ndt_node" output="screen">
     <param name="initial_pose" value="$(var initial_pose)"/>

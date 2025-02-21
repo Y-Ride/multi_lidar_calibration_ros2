@@ -1,12 +1,28 @@
 # Calibration Notes
 
-## **__ TODO:__**
+All of the following calibrations were done with the bags `calibration_top_of_ramp_angled_left_front` and `calibration_top_of_ramp_angled_right_back`. 
 
-Redo the calibration but use `all_lidars_all_topics_down_ramp` instead of `all_lidars_360_outside`
+You can use `list_to_array.sh` to transform a list of inputs into an array of floats if needed.
+
+Example:
+``` bash
+# Input
+./list_to_array.sh 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+```
+``` bash
+# Output
+[1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0]
+```
+> Note: In vscode, you can use `ctl + shft + v` to preview this readme file. In the preview, the transformation matrices are printed as one line lists instead of in matrix format.
 
 ## Top
 
 This is the main reference lidar
+- Identity transform:
+  1 0 0 0
+  0 1 0 0
+  0 0 1 0
+  0 0 0 1
 
 
 ## Left
@@ -21,14 +37,14 @@ This is the main reference lidar
 
 **After NDT Calibration:**
 - NDT converged.
-- The score is 8.89009
+- The score is 6.49053
 - Transformation matrix:
- -0.714313  -0.699821 0.00274721 -0.0769035
-  0.442218  -0.454411  -0.773275  -0.761647
-  0.542402  -0.551145   0.634065  -0.233036
-         0          0          0          1
+  -0.716498  -0.697582 0.00317738 -0.0903388
+   0.445107  -0.460675  -0.767892  -0.732264
+   0.537131  -0.548779   0.640572  -0.253779
+          0          0          0          1
 - This transformation can be replicated using:
-ros2 run tf2_ros static_transform_publisher -0.0769035  -0.761647  -0.233036   2.58726 -0.573294  -0.71555 os_lidar_top os_lidar_left
+ros2 run tf2_ros static_transform_publisher -0.0903388  -0.732264  -0.253779   2.58571 -0.567032 -0.708372 os_lidar_top os_lidar_left
 
 
 ## Right
@@ -43,14 +59,14 @@ ros2 run tf2_ros static_transform_publisher -0.0769035  -0.761647  -0.233036   2
 
 **After NDT Calibration:**
 - NDT converged.
-- The score is 0.930197
+- The score is 3.74825
 - Transformation matrix:
- -0.708694   0.705374 -0.0141393 -0.0733905
- -0.487661  -0.475277   0.732324    0.72309
-  0.509843   0.525889   0.680809   -0.25894
-         0          0          0          1
+  -0.706876    0.70714 -0.0167163 -0.0778711
+  -0.490656  -0.473176   0.731683   0.706387
+   0.509493   0.525411    0.68144  -0.286456
+          0          0          0          1
 - This transformation can be replicated using:
-ros2 run tf2_ros static_transform_publisher -0.0733905    0.72309   -0.25894 0.602703 -2.60659 -2.48388 os_lidar_top os_lidar_right
+ros2 run tf2_ros static_transform_publisher -0.0778711   0.706387  -0.286456 0.606768   -2.607 -2.48477 os_lidar_top os_lidar_right
 
 
 ## Front
@@ -66,14 +82,14 @@ ros2 run tf2_ros static_transform_publisher -0.0733905    0.72309   -0.25894 0.6
 
 **After NDT Calibration:**
 - NDT converged.
-- The score is 0.794342
+- The score is 1.65053
 - Transformation matrix:
-  0.551509  -0.570191  -0.608868   -1.77807
-  0.711277   0.702775 -0.0138622 -0.0260497
-  0.435801  -0.425428   0.793151  -0.220312
+  0.550484  -0.572266  -0.607848   -1.74023
+  0.711988   0.702006 -0.0161156 -0.0308126
+  0.435936   -0.42391    0.79389  -0.229185
          0          0          0          1
 - This transformation can be replicated using:
-ros2 run tf2_ros static_transform_publisher   -1.77807 -0.0260497  -0.220312  0.911249 -0.450928 -0.492325 os_lidar_top os_lidar_front
+ros2 run tf2_ros static_transform_publisher   -1.74023 -0.0308126  -0.229185  0.912634 -0.451078 -0.490449 os_lidar_top os_lidar_front
 
 
 ## Back
@@ -88,13 +104,13 @@ ros2 run tf2_ros static_transform_publisher   -1.77807 -0.0260497  -0.220312  0.
 
 **After NDT Calibration:**
 - NDT converged.
-- The score is 7.64531
+- The score is 5.16496
 - Transformation matrix:
- -0.611508  -0.605518   0.509318     1.7702
-   0.70655  -0.707628 0.00702698 0.00465821
-  0.356153   0.364156    0.86055  -0.175391
+  -0.61119   -0.60748    0.50736    1.74274
+  0.708089  -0.706082 0.00758085  0.0221608
+  0.353633   0.363889   0.861701  -0.173762
          0          0          0          1
-- This transformation can be replicated using:
-ros2 run tf2_ros static_transform_publisher     1.7702 0.00465821  -0.175391   2.28421 -0.364148  0.400316 os_lidar_top os_lidar_back
+- This transformation can be replicated using: 
+ros2 run tf2_ros static_transform_publisher   1.74274 0.0221608 -0.173762   2.28288 -0.361452  0.399575 os_lidar_top os_lidar_back
 
 
